@@ -1,42 +1,48 @@
-# InterviewIQ.AI – AI-Powered Interview Preparation Platform
+# InterviewIQ.AI
 
-An intelligent interview preparation platform designed to help students and job seekers prepare for technical and HR interviews through personalized interview experiences and resume-based analysis.
+**An AI-Powered Interview Preparation Platform**
 
-## 🚀 Overview
+InterviewIQ.AI is a web-based application designed to help students prepare for technical and HR interviews. Users can upload their resumes, view extracted information such as skills, academic details, and projects, and use the platform to prepare for interviews based on their profiles.
 
-**InterviewIQ.AI** aims to make interview preparation smarter, more structured, and personalized. Users can upload their resumes, analyze their skills and projects, and prepare for interviews based on their professional profiles.
+The main goal of this project is to make interview preparation more organised and help students understand their strengths and areas where they can improve.
 
-## ✨ Features
+## Features
 
-- **Resume Upload & Parsing:** Upload PDF and DOCX resumes to extract candidate information.
-- **Resume Analysis:** Extract academic details, CGPA, technical skills, and projects.
-- **Personalized Interview Preparation:** Prepare interview questions based on candidate profiles.
-- **Technical Interview Preparation:** Practice programming and technical questions.
-- **HR Interview Preparation:** Prepare for behavioral and HR-related questions.
-- **User Authentication:** Secure user registration and login.
-- **Interview Management:** Create and manage interview preparation sessions.
-- **Interactive Dashboard:** Access interview-related information through a user-friendly interface.
+- **Resume Upload:** Upload resumes in PDF and DOCX formats.
+- **Resume Parsing:** Extract information such as CGPA, skills, and projects from uploaded resumes.
+- **Interview Preparation:** Prepare for technical and HR interview questions.
+- **User Authentication:** Secure registration and login using JWT authentication.
+- **Dashboard:** View resume details and manage interview preparation activities.
+- **Interview Management:** Keep track of interview preparation and related information.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-| Category | Technologies |
-|---|---|
-| Frontend | React.js, Vite |
-| Styling | CSS |
-| Backend | Node.js, Express.js |
-| Database | MongoDB |
-| Authentication | JWT |
-| Resume Parsing | PDF-Parse, Mammoth |
-| API Testing | Postman |
-| Version Control | Git & GitHub |
+**Frontend**
+- React.js
+- Vite
+- CSS
 
-## 📁 Project Structure
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- MongoDB
+
+**Other Tools and Libraries**
+- JWT Authentication
+- PDF-Parse
+- Mammoth
+- Multer
+- Postman
+- Git and GitHub
+
+## Project Structure
 
 ```text
 InterviewIQ.AI/
 │
 ├── client/
-│   ├── public/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
@@ -45,109 +51,96 @@ InterviewIQ.AI/
 │   └── package.json
 │
 ├── server/
+│   ├── config/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
 │   ├── middleware/
-│   ├── config/
 │   ├── uploads/
 │   ├── server.js
 │   └── package.json
 │
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-*Note: Adjust the folder structure to match your actual repository.*
+## Getting Started
 
-## ⚙️ Installation & Setup
+Follow these steps to run the project locally.
 
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-### 2. Navigate to the Project
-
-```bash
 cd InterviewIQ.AI
 ```
 
-### 3. Install Backend Dependencies
-
-```bash
-cd server
-npm install
-```
-
-### 4. Configure Environment Variables
-
-Create a `.env` file inside the backend directory.
-
-```env
-PORT=8000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-```
-
-Add any additional environment variables required by your application.
-
-### 5. Start the Backend
-
-```bash
-npm run dev
-```
-
-### 6. Install Frontend Dependencies
-
-Open another terminal:
+### 2. Install frontend dependencies
 
 ```bash
 cd client
 npm install
 ```
 
-### 7. Start the Frontend
+### 3. Install backend dependencies
+
+Open another terminal:
 
 ```bash
+cd server
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file inside the server folder.
+
+```env
+PORT=8000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+Add any other environment variables required by your implementation.
+
+### 5. Run the application
+
+Start the backend:
+
+```bash
+cd server
 npm run dev
 ```
 
-Open the local development URL displayed in your terminal.
+Start the frontend in another terminal:
 
-## 🔐 Security
+```bash
+cd client
+npm run dev
+```
 
-- Environment variables are used to protect sensitive configuration.
-- Authentication is implemented using JWT.
-- Uploaded resumes should be handled securely.
-- Never commit `.env` files, API keys, or database credentials to GitHub.
+Open the local URL displayed by Vite in your browser.
 
-## 🎯 Project Objectives
+## What I Learned
 
-- Simplify interview preparation for students and freshers.
-- Provide personalized interview preparation based on resumes.
-- Help candidates identify their technical strengths.
-- Improve confidence for technical and HR interviews.
-- Create an accessible platform for structured interview practice.
+While working on this project, I got practical experience with:
 
-## 🔮 Future Enhancements
+- Building a full-stack application using the MERN stack.
+- Creating REST APIs with Node.js and Express.js.
+- Connecting MongoDB with a React application.
+- Implementing JWT-based authentication.
+- Uploading and processing PDF and DOCX files.
+- Extracting useful information from resumes.
+- Connecting frontend components with backend APIs.
+- Testing APIs using Postman.
 
-- AI-powered mock interview sessions.
-- Voice-based interview simulation.
-- Real-time interview feedback.
-- Resume scoring and improvement suggestions.
-- Performance analytics and progress tracking.
-- Integration with additional AI models.
+## Future Improvements
 
-## 👨‍💻 Author
-
-**Prabal Gautam**
-
-B.Tech – Computer Science and Engineering  
-Specialization: Cyber Security
+- Add more interview categories and question types.
+- Improve resume parsing for different resume formats.
+- Add interview performance reports.
+- Include mock interview sessions.
+- Improve the dashboard and user experience.
 
 ---
 
-⭐ If you find this project interesting, consider giving the repository a star!
-
+**Developed as a full-stack project to explore web development and build a practical interview preparation application.**
